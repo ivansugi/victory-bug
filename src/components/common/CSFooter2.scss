@@ -1,0 +1,413 @@
+@media (min-width:768px) {
+    #global-footer .nw-show-on-mobile,
+    #global-nav .nw-show-on-mobile {
+        display: none
+    }
+}
+
+@media (max-width:767px) {
+    #global-footer .nw-show-on-tablet,
+    #global-nav .nw-show-on-tablet {
+        display: none
+    }
+}
+
+@media (min-width:1024px) {
+    #global-footer .nw-show-on-tablet,
+    #global-nav .nw-show-on-tablet {
+        display: none
+    }
+}
+
+@media (max-width:1023px) {
+    #global-footer .nw-show-on-desktop,
+    #global-nav .nw-show-on-desktop {
+        display: none
+    }
+}
+
+@media (max-width:767px) {
+    #global-footer .nw-hide-on-mobile,
+    #global-nav .nw-hide-on-mobile {
+        display: none
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    #global-footer .nw-hide-on-tablet,
+    #global-nav .nw-hide-on-tablet {
+        display: none
+    }
+}
+
+@media (min-width:1024px) {
+    #global-footer .nw-hide-on-desktop,
+    #global-nav .nw-hide-on-desktop {
+        display: none
+    }
+}
+
+#global-footer label,
+#global-nav label {
+    margin-bottom: 0
+}
+
+.global-footer {
+    background-color: #464646;
+    padding: 30px 40px 80px;
+    font: 400 11px/14px 'Gotham A', 'Gotham B';
+    color: #dcdcdc
+}
+
+.global-footer__inner-wrapper {
+    max-width: 1050px;
+    margin: 0 auto
+}
+
+.global-footer nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 200px;
+    max-width: 650px
+}
+
+.global-footer ul {
+    list-style-type: none;
+    padding-left: 0
+}
+
+.global-footer__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 25px
+}
+
+.global-footer__copyright {
+    float: left
+}
+
+.global-footer__copyright-img {
+    width: 30px;
+    height: 30px
+}
+
+.global-footer__copyright-text {
+    color: #929292;
+    margin-left: 5px;
+    vertical-align: bottom
+}
+
+.global-footer__link {
+    font: 500 12px/14px 'Gotham A', 'Gotham B';
+    margin-bottom: 15px;
+    text-decoration: none;
+    transition: color .1s ease
+}
+
+.global-footer__link--secondary {
+    font: 400 11px/14px 'Gotham A', 'Gotham B'
+}
+
+.global-footer__link,
+.global-footer__link:link,
+.global-footer__link:link:visited,
+.global-footer__link:visited {
+    color: #fff
+}
+
+.global-footer__link.global-footer__link--secondary,
+.global-footer__link:link.global-footer__link--secondary,
+.global-footer__link:link:visited.global-footer__link--secondary,
+.global-footer__link:visited.global-footer__link--secondary {
+    color: #dcdcdc
+}
+
+.global-footer__link:hover,
+.global-footer__link:link:hover {
+    text-decoration: none;
+    color: #6cc551
+}
+
+.global-footer__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    min-width: 150px
+}
+
+.global-footer__social-links {
+    text-align: right;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: end;
+    margin-top: 0
+}
+
+.global-footer__message,
+.global-footer__social-apps,
+.global-footer__social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end
+}
+
+.global-footer__message,
+.global-footer__social-apps {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    -ms-flex-pack: end
+}
+
+.global-footer__social-apps {
+    margin-top: 10px
+}
+
+.global-footer__message {
+    margin-bottom: 10px
+}
+
+.global-footer__message-content {
+    max-width: 300px
+}
+
+.global-footer__social-link {
+    display: inline-block;
+    margin: 0 0 0 15px;
+    vertical-align: top;
+    line-height: 0
+}
+
+.global-footer__social-link:first-child {
+    margin-left: 0
+}
+
+.global-footer__social-link a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #747679;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 0
+}
+
+.global-footer__social-link a:before {
+    content: "";
+    display: block;
+    overflow: hidden;
+    width: 21px;
+    height: 100%;
+    margin: 0 auto;
+    background: transparent url(//cdn.nerdwallet.com/img/icons/global-footer/Footer_Social_Icons.svg) no-repeat 0;
+    background-size: 300% auto;
+    background-position-x: 0;
+    background-position-y: 50%
+}
+
+.global-footer__social-link--apple-store,
+.global-footer__social-link--google-play {
+    display: block;
+    margin: 0
+}
+
+.global-footer__social-link--apple-store a,
+.global-footer__social-link--google-play a {
+    width: 135px;
+    height: 40px;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    margin: 0 auto
+}
+
+.global-footer__social-link--apple-store a:before,
+.global-footer__social-link--google-play a:before {
+    content: none
+}
+
+.global-footer__social-link--apple-store {
+    margin-right: 20px
+}
+
+.global-footer__social-link--apple-store a {
+    background: url(//cdn.nerdwallet.com/img/icons/global-footer/Download_on_the_App_Store_Badge_US-UK_135x40.svg);
+    background-size: 100%
+}
+
+.global-footer__social-link--google-play a {
+    background: url(https://play.google.com/intl/en_us/badges/images/badge_new.png);
+    background-size: 100%
+}
+
+.global-footer__social-link--twitter a:hover {
+    background-color: #00aced
+}
+
+.global-footer__social-link--facebook a:before {
+    background-position: -21px;
+    background-position-x: 50%
+}
+
+.global-footer__social-link--facebook a:hover {
+    background-color: #3b5998
+}
+
+.global-footer__social-link--instagram a:before {
+    background-position: -42px;
+    background-position-x: 100%
+}
+
+.global-footer__social-link--instagram a:hover {
+    background-color: #517fa4
+}
+
+.global-footer__secondary-nav .global-footer__link {
+    padding: 0 15px;
+    font: 400 11px/1.5 'Gotham A', 'Gotham B'
+}
+
+.global-footer__secondary-nav .global-footer__link:first-child {
+    border-right: 1px solid #dcdcdc
+}
+
+.global-footer__secondary-nav .global-footer__link:last-child {
+    padding-right: 0
+}
+
+.global-footer__disclaimer {
+    border-top: 1px solid #929292;
+    padding-top: 20px
+}
+
+.global-footer__disclaimer .disclaimer {
+    font: 400 11px/14px 'Gotham A', 'Gotham B'
+}
+
+.global-footer__disclaimer .title {
+    font-weight: 700
+}
+
+@media (max-width:1023px) {
+    .global-footer__column {
+        min-width: 100px
+    }
+    .global-footer__social-link--apple-store a,
+    .global-footer__social-link--google-play a {
+        width: 125px;
+        background-repeat: no-repeat
+    }
+}
+
+@media (max-width:767px) {
+    .global-footer__row:first-child {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column
+    }
+    .global-footer__social-links {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end
+    }
+    .global-footer__social-link {
+        margin: 0 15px 0 0
+    }
+    .global-footer__social-link--apple-store a,
+    .global-footer__social-link--google-play a {
+        width: 130px;
+        background-repeat: no-repeat
+    }
+    .global-footer__message {
+        margin-bottom: 20px
+    }
+    .global-footer__social-apps {
+        margin-top: 20px
+    }
+    .global-footer__message,
+    .global-footer__social-apps {
+        text-align: left;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start
+    }
+    .global-footer__message-content {
+        max-width: 100%
+    }
+    .global-footer__inner-wrapper {
+        position: relative;
+        max-width: 500px
+    }
+    .global-footer nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        max-height: 600px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-bottom: 20px
+    }
+    .global-footer__column {
+        max-width: auto;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%
+    }
+    .global-footer__row:nth-child(2) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start
+    }
+    .global-footer__secondary-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        position: absolute;
+        top: 360px
+    }
+    .global-footer__secondary-nav .global-footer__link {
+        margin: 0;
+        padding: 0
+    }
+    .global-footer__secondary-nav .global-footer__link:first-child {
+        border: none
+    }
+}
+
+@media (min-width: 768px) {
+    .global-footer{
+        padding: 30px 40px;
+        &.offset{
+            margin-left: 100px;
+        }
+    }
+}

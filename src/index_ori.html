@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--suppress HtmlUnknownTarget -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        CreditSwift
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script>
+        var $buoop = {
+            vs: {
+                i: 10,
+                f: -4,
+                o: -4,
+                s: 8,
+                c: -4
+            },
+            api: 4
+        };
+
+        function $buo_f() {
+            var e = document.createElement("script");
+            e.src = "//browser-update.org/update.min.js";
+            document.body.appendChild(e);
+        };
+        try {
+            document.addEventListener("DOMContentLoaded", $buo_f, false)
+        } catch (e) {
+            window.attachEvent("onload", $buo_f)
+        }
+    </script>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
+    <link rel="stylesheet" type="text/css" href="./external_js/bootstrap-tour/css/bootstrap-tour.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.4/scrollreveal.min.js"></script>
+
+    <script type="text/javascript" src="./external_js/js4k.js"></script>
+    <script type="text/javascript" src="./external_js/bootstrap-tour/js/bootstrap-tour.min.js"></script>
+    <script type="text/javascript" src="./external_js/snare.js"></script>
+    <script type="text/javascript" src="./external_js/static_wdp.js"></script>
+    <script type="text/javascript" src="/iojs/latest/dyn_wdp.js"></script>
+    <script type="text/javascript" src="https://ci-first.iovation.com/latest/dyn_wdp.js"></script>
+    <script type="text/javascript" src="https://ci-mpsnare.iovation.com/snare.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6616596/6354992/css/fonts.css" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+    <div id="react-container">
+    </div>
+    <div id="outdated" class="outdated">
+        <header style="background:#13b7de;">
+            <div class="container">
+                <img src="./images/logo.png" alt="" class='img-responsive'>
+            </div>
+        </header>
+        <div class="container">
+            <h1>Outdated Browser</h1>
+            <p class='lead'>For A Better Experience, Keep Your Browser Up To Date. Check Here For Latest Versions.</p>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-4" id="chrome">
+                    <a href="https://www.google.com/chrome" title="Google Chrome">
+                        <div class="icon">
+                            <i class="fa fa-4x fa-chrome"></i>
+
+                        </div>
+                        <h2>Google Chrome</h2>
+                        <p class="info">“A fast new browser from Google. Try&nbsp;it&nbsp;now!”</p>
+                        <p class="website">Visit website for more info</p>
+                    </a>
+                </div>
+                <!-- #chrome -->
+                <div class="col-md-4" id="firefox">
+                    <a href="https://www.firefox.com/" title="Mozilla Firefox">
+                        <div class="icon">
+                            <i class="fa fa-4x fa-firefox"></i>
+
+                        </div>
+                        <h2>Mozilla Firefox</h2>
+                        <p class="info">“Your online security is Firefox's top priority. Firefox is free, and made to help you get the most out of the&nbsp;web.”</p>
+                        <p class="website">Visit website for more info</p>
+                    </a>
+                </div>
+                <!-- #firefox -->
+                <div class="col-md-4" id="safari">
+                    <a href="https://www.apple.com/safari/" title="Apple Safari">
+                        <div class="icon">
+                            <i class="fa fa-4x fa-safari"></i>
+
+                        </div>
+                        <h2>Safari</h2>
+                        <p class="info">“Safari for Mac from Apple, the world’s most innovative&nbsp;browser.”</p>
+                        <p class="website">Visit website for more info</p>
+                    </a>
+                </div>
+                <div class="col-md-12"><br><br></div>
+                <div class="col-md-4" id="opera">
+                    <a href="https://www.opera.com/" title="Opera">
+                        <div class="icon">
+                            <i class="fa fa-4x fa-opera"></i>
+
+                        </div>
+                        <h2>Opera</h2>
+                        <p class="info">“The fastest browser on Earth—secure, powerful and easy to use, with excellent privacy protection. And&nbsp;it&nbsp;is&nbsp;free.”</p>
+                        <p class="website">Visit website for more info</p>
+                    </a>
+                </div>
+                <!-- #opera -->
+                <div class="col-md-4" id="edge">
+                    <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" title="Microsoft Edge">
+                        <div class="icon">
+                            <i class="fa fa-4x fa-edge"></i>
+
+                        </div>
+                        <h2>Microsoft Edge</h2>
+                        <p class="info">“Microsoft Edge ranks first when put to real world page load tests. Whether you use the web to search, watch or play, this browser won’t slow you down.”</p>
+                        <p class="website">Visit website for more info</p>
+                    </a>
+                </div>
+                <!-- #edge -->
+                <div class="col-md-4" id="ie">
+                    <a href="https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads" title="Microsoft Internet Explorer">
+                        <div class="icon">
+                            <i class="fa fa-4x fa-internet-explorer"></i>
+
+                        </div>
+                        <h2>Internet Explorer</h2>
+                        <p class="info">“Designed to help you take control of your privacy and browse with confidence. Free from&nbsp;Microsoft.”</p>
+                        <p class="website">Visit website for more info</p>
+                    </a>
+                </div>
+                <!-- #ie -->
+            </div>
+        </div>
+    </div>
+   
+
+    <script>
+        /*var main = document.querySelectorAll('#react-container')
+        var outdated = document.querySelectorAll('#outdated')
+        outdated[0].style.display = 'none'
+        main[0].style.display = ''
+        if (Modernizr.smil ) { // eslint-ignore-line
+            outdated[0].style.display = 'none'
+            main[0].style.display = ''
+            /* set HTML5 content 
+           
+        } else {
+            outdated[0].style.display = ''
+            main[0].style.display = 'none'
+        }*/
+        var main = document.querySelectorAll('#react-container')
+        var outdated = document.querySelectorAll('#outdated')
+        outdated[0].style.display = 'none'
+        main[0].style.display = ''
+
+        var browser = {
+                isIe: function () {
+                    return navigator.appVersion.indexOf("MSIE") != -1;
+                },
+                navigator: navigator.appVersion,
+                getVersion: function() {
+                    var version = 999; // we assume a sane browser
+                    if (navigator.appVersion.indexOf("MSIE") != -1)
+                        // bah, IE again, lets downgrade version number
+                        version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+                    return version;
+                }
+            };
+
+        if (browser.isIe() && browser.getVersion() <= 9) {
+
+            outdated[0].style.display = ''
+            main[0].style.display = 'none'
+        }
+    </script>
+     <script src="/bundle.js"></script>
+</body>
+
+</html>

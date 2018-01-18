@@ -1,0 +1,120 @@
+@import '../../../styles/c2-variable';
+.side-nav-3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #FFF;
+    height: 100vh;
+    z-index: 9000;
+    padding-top: 53px;
+    border-right: 1px solid $nw-border;
+    width: 100px;
+    >ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            position: relative;
+        }
+        a {
+            height: 99px;
+            color: $nw-text-dark;
+            font-size: 1.2em;
+            padding: 23px 8px;
+            display: block;
+            border-left: 3px solid transparent;
+            text-align: center;
+            position: relative;
+            outline: none;
+            &:hover,
+            &:active,
+            &:focus {
+                text-decoration: none;
+                color: #00accc;
+                transition: all .125 ease-in-out 0s;
+                -webkit-transition: all .125s ease-in-out 0s;
+                .icon {
+                    &.cs-home-svg {
+                        background-image: url(/images/home-button-blue.svg);
+                    }
+                    &.cs-creditscore-svg {
+                        background-image: url(/images/credit-score-blue.svg);
+                    }
+                    &.cs-lenderview-svg {
+                        background-image: url(/images/gauge-blue.svg);
+                    }
+                    &.cs-booster-svg {
+                        background-image: url(/images/booster-blue.svg);
+                    }
+                }
+            }
+            .icon {
+                height: 30px;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                background-size: contain;
+                -o-background-size: cover;
+                background-position: center bottom;
+                background-repeat: repeat-y;
+                margin: auto;
+                transition: all .125 ease-in-out 0s;
+                -webkit-transition: all .125s ease-in-out 0s;
+                &.cs-home-svg {
+                    background-image: url(/images/home-button-greyscale.svg);
+                }
+                &.cs-creditscore-svg {
+                    background-image: url(/images/credit-score-greyscale.svg);
+                }
+                &.cs-lenderview-svg {
+                    background-image: url(/images/LenderView-greyscale.svg);
+                }
+                &.cs-booster-svg {
+                    background-image: url(/images/boost-greyscale.svg);
+                }
+            }
+            i {
+                font-size: 30px;
+                display: block;
+                margin-bottom: 5px;
+            }
+            span {
+                font-size: 12px;
+                letter-spacing: -0.5px;
+            }
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 15px;
+                width: 70px;
+                border-top: 1px solid lighten($nw-border, 10%);
+            }
+        }
+        li:first-child {
+            a:before {
+                border-top: 0;
+            }
+        }
+        .active {
+            .icon {
+                &.cs-home-svg {
+                    background-image: url(/images/home-button-blue.svg);
+                }
+                &.cs-creditscore-svg {
+                    background-image: url(/images/credit-score-blue.svg);
+                }
+                &.cs-lenderview-svg {
+                    background-image: url(/images/gauge-blue.svg);
+                }
+                &.cs-booster-svg {
+                    background-image: url(/images/booster-blue.svg);
+                }
+            }
+            a {
+                color: #00accc;
+                border-left: 4px solid #00accc;
+            }
+        }
+    }
+}

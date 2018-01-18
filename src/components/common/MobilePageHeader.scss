@@ -1,0 +1,19 @@
+@import '../../../styles/c2-variable';
+
+.mobile-page-header{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color:$nw-text-dark;
+  .back-button{
+    color: $nw-text-light;
+    position: absolute;
+    left:0;
+    top: 8px;
+    &:hover{
+      text-decoration: none;
+    }
+
+  }
+}

@@ -1,0 +1,41 @@
+@import '../../../styles/c2-variable';
+.mega-menu-container {
+    padding: 20px 0 0 0;
+    width: 100vw;
+    left: 0;
+    position: absolute;
+    top: 60px;
+    // box-shadow: 0 5px 8px 0px $nw-text-light;
+    box-shadow: 0 5px 8px 0px rgba(117, 117, 117, 0.1);
+    background: #F5F6F7;
+    z-index: 1000;
+    .container {
+        width: auto;
+        margin-left: 185px;
+        margin-right: 185px;
+    }
+    h4 {
+        margin-bottom: 10px;
+        font-style: $nw-base;
+    }
+    ul {
+        margin-top: 0;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    h4 {
+        font-size: $nw-base;
+        ;
+    }
+    a {
+        font-size: 500;
+        ;
+        color: $nw-text-light;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $nw-primary;
+        }
+    }
+}

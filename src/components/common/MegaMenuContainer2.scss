@@ -1,0 +1,59 @@
+@import '../../../styles/c2-variable';
+.mega-menu-container-2 {
+    padding: 20px 0 0 0;
+    width: 1000px;
+    left: 30px;
+    position: absolute;
+    top: 41px;
+    // box-shadow: 0 5px 8px 0px $nw-text-light;
+    box-shadow: 0 5px 8px 0px rgba(117, 117, 117, 0.1);
+    background: #FFF;
+    z-index: 1000;
+    border-radius: 4px;
+    border:1px solid $nw-border;
+    &.col-count-4{
+        width: 1000px;   
+    }
+    &.col-count-5{
+        width: 1230px;   
+    }
+    .container-fluid {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .no-row{
+        display: flex;
+        > div{
+            flex: 1;
+            margin: 0 5px;
+        }
+    }
+    h4 {
+        margin-bottom: 20px;
+        font-style: $nw-base;
+    }
+    ul {
+        margin-top: 0;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    h4 {
+        font-size: $nw-base;
+        ;
+    }
+    a {
+        font-size: 500;
+        ;
+        color: $nw-text-dark;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $nw-primary;
+        }
+    }
+    .active a:before{
+        content: ' test';
+    }
+}

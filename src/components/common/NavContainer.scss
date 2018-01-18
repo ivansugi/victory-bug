@@ -1,0 +1,109 @@
+@import '../../../styles/c2-variable';
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    z-index: 200000;
+    width: 100%;
+    background: #FFF;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.15);
+    .container {
+        display: flex;
+    }
+    .logo {
+        margin-right: 10px;
+        img {
+            margin: 12px 15px 12px 0;
+        }
+    }
+    .primary-nav {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li {
+            display: inline;
+        }
+        a {
+            position: relative;
+            display: inline-block;
+            padding: 20px 10px 18px 15px;
+            border-bottom: 3px solid transparent;
+            transition: border .1s ease;
+            color: $c2-dark-grey;
+            font-weight: 500;
+            &:hover,
+            &:focus {
+                background: transparent;
+                color: $c2-primary;
+                border-bottom: 3px solid $c2-primary;
+            }
+        }
+        li.active a {
+            border-bottom: 3px solid $c2-primary;
+            color: $c2-dark-grey;
+            >:hover,
+            >:focus {
+            }
+        }
+    }
+    .primary-nav:hover {
+        li.active a {
+            border-bottom: 3px solid transparent;
+            &:hover,
+            &:focus {
+                color: $c2-primary;
+                border-bottom: 3px solid $c2-primary;
+            }
+        }
+    }
+    h1 {
+        text-align: center;
+        line-height: 1;
+        color: #ffffff;
+        font-size: 26px;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    .dropdown .caret {
+        display: none;
+    }
+}
+
+.nav-container .cs-sub-nav {
+    display: none;
+}
+
+.nav-container a.active .cs-sub-nav {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .nav-container {
+        .logo {
+            margin-right: 0;
+        }
+        .secondary-nav {
+            .btn-link {
+                font-size: 5vw;
+                padding: 12px 20px;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        .secondary-nav {
+            .btn-link {
+                font-size: 7vw;
+                padding: 12px 10px;
+                margin-right: 0;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+    }
+}
